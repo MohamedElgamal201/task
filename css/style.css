@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+  }
+  
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: cornsilk;
+  }
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 55px;
+    padding-right: 55px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 0px 12px 0px black;
+  }
+  .navbar .logo {
+    padding: 15px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .navbar .nav {
+    list-style: none;
+    display: flex;
+    margin-left: 350px;
+  }
+  .navbar .nav li {
+    margin-left: 50px;
+    padding: 15px;
+  }
+  .navbar .nav li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .navbar .nav li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    transform: scaleX(0);
+  }
+  .navbar .nav li a:hover:after {
+    transition: all 0.4s;
+    transform: scaleX(1);
+  }
+  
+  .heading {
+    height: 85vh;
+    margin-bottom: 110px;
+  }
+  .heading img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .meals {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 110px;
+  }
+  .meals .meals-heading {
+    padding-bottom: 50px;
+    font-size: 26px;
+  }
+  .meals .item-container {
+    display: grid;
+    grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8";
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+  .meals .item-container .pic1 {
+    grid-area: a1;
+    height: 280px;
+  }
+  .meals .item-container .pic1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic2 {
+    grid-area: a2;
+    height: 280px;
+  }
+  .meals .item-container .pic2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic3 {
+    grid-area: a3;
+    height: 280px;
+  }
+  .meals .item-container .pic3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic4 {
+    grid-area: a4;
+    height: 280px;
+  }
+  .meals .item-container .pic4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic5 {
+    grid-area: a5;
+    height: 280px;
+  }
+  .meals .item-container .pic5 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic6 {
+    grid-area: a6;
+    height: 280px;
+  }
+  .meals .item-container .pic6 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic7 {
+    grid-area: a7;
+    height: 280px;
+  }
+  .meals .item-container .pic7 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .meals .item-container .pic8 {
+    grid-area: a8;
+    height: 280px;
+  }
+  .meals .item-container .pic8 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact {
+    width: 55%;
+    margin: auto;
+    margin-bottom: 110px;
+  }
+  .contact fieldset{
+      padding: 15px;
+      background-color: antiquewhite;
+
+  }
+  .contact fieldset legend{
+      border: 1px solid black;
+      color: red;
+      padding: 3px;
+      font-size: 20px;
+  }
+  .contact header {
+    padding-bottom: 50px;
+    font-size: 26px;
+    
+  }
+  .contact .item-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .item-contact input {
+    width: 100%;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid gray;
+  }
+  .contact .btn {
+    text-align: center;
+  }
+  .contact .btn button {
+    padding: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+  }
+  .contact .btn button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
